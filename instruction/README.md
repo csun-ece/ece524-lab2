@@ -69,10 +69,10 @@ The design given to you is parameterizable for input and output widths as well a
 Note: As you can guess, the register width grows as the number of stages grows. The following formula expresses this growth:
 
 ```
-B_max = [N * log2(RM) + B]
+B_max = [N * log2(R * M) + B]
 ```
 
-Where:
+Where:  
 N: number of CIC stages  
 R: rate change   
 M: differential delay in comb stage of the CIC filter  
